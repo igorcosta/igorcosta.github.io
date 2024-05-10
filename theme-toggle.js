@@ -5,9 +5,11 @@ function toggleTheme() {
     if (currentTheme === 'dark') {
         body.classList.replace('dark-theme', 'light-theme');
         localStorage.setItem('theme', 'light');
+        document.dispatchEvent(new CustomEvent('themeChange', { detail: { theme: 'light' } }));
     } else {
         body.classList.replace('light-theme', 'dark-theme');
         localStorage.setItem('theme', 'dark');
+        document.dispatchEvent(new CustomEvent('themeChange', { detail: { theme: 'dark' } }));
     }
 }
 
