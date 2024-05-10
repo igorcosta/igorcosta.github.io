@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+  --dark-bg: #2b2d42;
+  --dark-text: #edf2f4;
+  --light-bg: #edf2f4;
+  --light-text: #2b2d42;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  background: var(--light-bg);
+  color: var(--light-text);
+  transition: all 0.5s ease;
+}
+
+.dark-theme {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.light-theme {
+  background: var(--light-bg);
+  color: var(--light-text);
+}
+
+.toggle-theme-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #8d99ae;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.toggle-theme-btn:hover {
+  background-color: #4c5c68;
+}
